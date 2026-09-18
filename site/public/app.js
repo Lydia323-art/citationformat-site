@@ -637,8 +637,8 @@ function renderPrivacyPage() {
     body: `
       <div class="content-card"><h2>Information you enter</h2><p>You may enter a DOI or citation details such as author names, article title, journal name, year, volume, issue, pages, DOI, or URL.</p><p>In the MVP version, this site does not upload PDF files, store PDF files, create user accounts, or save bibliography projects.</p></div>
       <div class="content-card"><h2>DOI lookup</h2><p>When you use DOI lookup, the DOI may be sent to Crossref to retrieve citation metadata.</p></div>
-      <div class="content-card"><h2>Analytics</h2><p>The site may collect basic usage analytics such as page views, generation events, copy button events, and error types. Analytics configuration is pending.</p></div>
-      <div class="content-card"><h2>Contact</h2><p>Contact email: to be confirmed.</p></div>
+      <div class="content-card"><h2>Analytics</h2><p>The site uses Microsoft Clarity to understand aggregate usage patterns, page interactions, and technical issues. Clarity may collect interaction data such as page views, clicks, scrolling, device/browser information, and approximate location derived from network data. Citation text is not saved by this site.</p></div>
+      <div class="content-card"><h2>Contact</h2><p>Contact email: hello@citationformat.site.</p></div>
     `
   });
 }
@@ -661,7 +661,7 @@ function renderCookiePolicyPage() {
     description: "Cookie policy for the APA Citation Generator MVP.",
     body: `
       <div class="content-card"><h2>Essential cookies</h2><p>The MVP does not require user accounts, saved projects, checkout, or billing, so it should not need account or payment cookies.</p></div>
-      <div class="content-card"><h2>Analytics cookies</h2><p>If GA4, Clarity, or another analytics product is enabled, this page must be updated to explain what service is used, what data is collected, and how users can opt out where applicable.</p></div>
+      <div class="content-card"><h2>Analytics cookies</h2><p>Microsoft Clarity is enabled to help us understand page usage and improve the citation tool. Clarity may use cookies or similar technologies for analytics, session insights, and fraud prevention. You can limit cookies through your browser settings.</p></div>
       <div class="content-card"><h2>Advertising cookies</h2><p>Advertising is not part of the MVP. If ads are enabled later, update this policy and add appropriate disclosure before launch.</p></div>
     `
   });
