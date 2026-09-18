@@ -34,6 +34,7 @@ function cleanSiteUrl(raw) {
 
 const siteUrl = cleanSiteUrl(process.env.SITE_URL);
 const publicDir = path.join(__dirname, "..", "public");
+const indexHtml = fs.readFileSync(path.join(publicDir, "index.html"), "utf8");
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -50,4 +51,33 @@ Sitemap: ${siteUrl}/sitemap.xml
 fs.writeFileSync(path.join(publicDir, "sitemap.xml"), sitemap);
 fs.writeFileSync(path.join(publicDir, "robots.txt"), robots);
 
-console.log(`Prepared production sitemap and robots for ${siteUrl}`);
+for (const route of routes.filter((route) => route !== "/")) {
+  const routeDir = path.join(publicDir, route.replace(/^\/|\/$/g, ""));
+  fs.mkdirSync(routeDir, { recursive: true });
+  fs.writeFileSync(path.join(routeDir, "index.html"), indexHtml);
+}
+
+const notFound = `<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Not Found | Citation Format</title>
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="legal-page">
+      <h1>Page not found</h1>
+      <div class="content-card">
+        <p>The page you requested does not exist.</p>
+        <p><a class="button" href="/">Go to the citation generator</a></p>
+      </div>
+    </main>
+  </body>
+</html>
+`;
+
+fs.writeFileSync(path.join(publicDir, "404.html"), notFound);
+
+console.log(`Prepared production sitemap, robots, route index files, and 404 page for ${siteUrl}`);
