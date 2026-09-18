@@ -1,0 +1,12 @@
+{
+  "name": "apa-citation-generator",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "dev:local": "node server.mjs",
+    "prepare:production": "node scripts/prepare-production-assets.cjs",
+    "check": "node --check server.mjs && node --check public/app.js && node --check functions/api/doi.js && node --check scripts/prepare-production-assets.cjs"
+  }
+}

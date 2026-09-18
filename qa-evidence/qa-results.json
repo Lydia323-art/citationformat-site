@@ -1,0 +1,213 @@
+{
+  "baseUrl": "http://localhost:4175",
+  "generatedAt": "2026-09-18T03:47:13.384Z",
+  "screenshots": [
+    "desktop-home.png",
+    "mobile-home.png",
+    "invalid-doi-error.png",
+    "manual-citation-success.png",
+    "doi-lookup-result.png"
+  ],
+  "results": [
+    {
+      "name": "Mobile viewport has no horizontal overflow",
+      "status": "PASS"
+    },
+    {
+      "name": "Hero explains product in first viewport",
+      "status": "PASS",
+      "h1": "Free APA 7 Citation Generator",
+      "lede": "Create APA 7 reference and in-text citations for free. Paste a DOI or enter article details. No account required."
+    },
+    {
+      "name": "Generator form is visible on homepage",
+      "status": "PASS"
+    },
+    {
+      "name": "Bottom CTA is present",
+      "status": "PASS"
+    },
+    {
+      "name": "Invalid DOI flow shows helpful error",
+      "status": "PASS",
+      "message": "Enter a DOI that starts with 10. and includes a slash."
+    },
+    {
+      "name": "Manual article form generates APA reference",
+      "status": "PASS",
+      "reference": "Smith, J. (2020). Designing student-friendly citation tools. Journal of Academic Writing, 12(3), 45-56. https://doi.org/10.0000/example"
+    },
+    {
+      "name": "Manual article form generates in-text citation",
+      "status": "PASS",
+      "parenthetical": "(Smith, 2020)"
+    },
+    {
+      "name": "Copy reference button writes expected text to clipboard",
+      "status": "PASS"
+    },
+    {
+      "name": "DOI lookup generates citation from Crossref",
+      "status": "PASS",
+      "reference": "Ray, O. (2004). How the Mind Hurts and Heals the Body. American Psychologist, 59(1), 29-40. https://doi.org/10.1037/0003-066x.59.1.29"
+    },
+    {
+      "name": "All indexable routes render in browser",
+      "status": "PASS",
+      "checked": 13
+    },
+    {
+      "name": "robots.txt and sitemap.xml are accessible",
+      "status": "PASS",
+      "staticChecks": [
+        {
+          "route": "/robots.txt",
+          "status": 200,
+          "ok": true
+        },
+        {
+          "route": "/sitemap.xml",
+          "status": 200,
+          "ok": true
+        }
+      ]
+    }
+  ],
+  "routeReports": [
+    {
+      "route": "/",
+      "status": "complete",
+      "h1": "Free APA 7 Citation Generator",
+      "title": "Free APA 7 Citation Generator for DOI, PDFs, and Articles",
+      "description": "Generate APA 7 citations from a DOI or article details. Create reference and in-text citations for journal articles, PDFs, and web sources for free.",
+      "canonical": "/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/apa-citation-generator-pdf/",
+      "status": "complete",
+      "h1": "APA Citation Generator for PDFs",
+      "title": "APA Citation Generator for PDFs",
+      "description": "Need to cite a PDF in APA 7? Use the DOI when available or enter article details manually to create reference and in-text citations.",
+      "canonical": "/apa-citation-generator-pdf/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/apa-7-citation-generator/",
+      "status": "complete",
+      "h1": "APA 7 Citation Generator",
+      "title": "APA 7 Citation Generator",
+      "description": "Create APA 7 citations for journal articles, PDFs, and DOI sources. Learn why APA 7 matters and generate references for free.",
+      "canonical": "/apa-7-citation-generator/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/doi-to-apa-citation/",
+      "status": "complete",
+      "h1": "DOI to APA Citation Generator",
+      "title": "DOI to APA Citation Generator",
+      "description": "Convert a DOI into an APA 7 reference and in-text citation. Free DOI lookup with manual fallback for missing metadata.",
+      "canonical": "/doi-to-apa-citation/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/journal-article-citation-generator/",
+      "status": "complete",
+      "h1": "Journal Article Citation Generator",
+      "title": "Journal Article Citation Generator",
+      "description": "Generate APA 7 citations for journal articles using DOI lookup or manual article details such as author, title, journal, volume, issue, and pages.",
+      "canonical": "/journal-article-citation-generator/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/apa-in-text-citation-generator/",
+      "status": "complete",
+      "h1": "APA In-Text Citation Generator",
+      "title": "APA In-Text Citation Generator",
+      "description": "Generate APA 7 parenthetical and narrative in-text citations from author and year details, with a matching reference citation.",
+      "canonical": "/apa-in-text-citation-generator/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/apa-reference-generator/",
+      "status": "complete",
+      "h1": "APA Reference Generator",
+      "title": "APA Reference Generator",
+      "description": "Create APA 7 reference-list entries for journal articles, PDFs, and DOI sources. Free reference generator with copyable output.",
+      "canonical": "/apa-reference-generator/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/apa-citation-examples/",
+      "status": "complete",
+      "h1": "APA Citation Examples",
+      "title": "APA Citation Examples",
+      "description": "See APA 7 citation examples for DOI, PDF, journal article, in-text citation, and missing metadata cases.",
+      "canonical": "/apa-citation-examples/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/apa-format/",
+      "status": "complete",
+      "h1": "APA Format Guide",
+      "title": "APA Format Guide for References and In-Text Citations",
+      "description": "Learn the basics of APA 7 reference format and in-text citations, then use the free generator to create citations from DOI or article details.",
+      "canonical": "/apa-format/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/science-direct-apa-citation/",
+      "status": "complete",
+      "h1": "ScienceDirect Article APA Citation Helper",
+      "title": "ScienceDirect Article APA Citation Helper",
+      "description": "Create an APA 7 citation for a ScienceDirect article using a DOI or article details. Independent helper, not affiliated with ScienceDirect.",
+      "canonical": "/science-direct-apa-citation/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/privacy/",
+      "status": "complete",
+      "h1": "Privacy Policy",
+      "title": "Privacy Policy",
+      "description": "Learn how this APA citation generator handles DOI lookup, citation inputs, analytics, and hosting data.",
+      "canonical": "/privacy/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/terms/",
+      "status": "complete",
+      "h1": "Terms of Use",
+      "title": "Terms of Use",
+      "description": "Review the terms for using this independent APA citation generator and citation formatting helper.",
+      "canonical": "/terms/",
+      "canonicalMatches": true
+    },
+    {
+      "route": "/cookie-policy/",
+      "status": "complete",
+      "h1": "Cookie Policy",
+      "title": "Cookie Policy",
+      "description": "Cookie policy for the APA Citation Generator MVP.",
+      "canonical": "/cookie-policy/",
+      "canonicalMatches": true
+    }
+  ],
+  "staticChecks": [
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "ok": true
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "ok": true
+    }
+  ],
+  "issues": [],
+  "consoleErrors": [
+    "Failed to load resource: the server responded with a status of 400 (Bad Request)"
+  ],
+  "unexpectedConsoleErrors": [],
+  "failedRequests": []
+}
