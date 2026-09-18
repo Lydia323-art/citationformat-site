@@ -2,7 +2,9 @@
 
 Project: citationformat.site  
 Local path: `E:\项目\AI编程做站\做站资料\codex做站\网站\2026-09-18-apa-citation-generator`  
-Status: `WAITING_GITHUB_REMOTE`
+Status: `PUSHED_TO_GITHUB`
+Repository: `https://github.com/Lydia323-art/citationformat-site`
+Commit: `c7a951a`
 
 ## Completed
 
@@ -18,7 +20,7 @@ Status: `WAITING_GITHUB_REMOTE`
 Git commit and push are waiting for:
 
 - Git author name and email.
-- GitHub repository URL.
+- None for GitHub push.
 
 ## Recommended GitHub Repository
 
@@ -30,24 +32,15 @@ Suggested visibility:
 
 Private during setup, public later only if you want the source open.
 
-## Commands To Run After GitHub Repo Exists
+## Push Completed
 
-From this project root:
+The initial MVP has been pushed to:
 
-```powershell
-git config --global user.name "Your Name"
-git config --global user.email "you@example.com"
-git commit -m "Initial citation format MVP"
-git remote add origin https://github.com/<your-github-username>/citationformat-site.git
-git push -u origin main
-```
+`https://github.com/Lydia323-art/citationformat-site`
 
-If you prefer SSH:
+Commit:
 
-```powershell
-git remote add origin git@github.com:<your-github-username>/citationformat-site.git
-git push -u origin main
-```
+`c7a951a`
 
 ## After Push
 

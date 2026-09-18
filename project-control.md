@@ -52,7 +52,7 @@
 - [x] 通过 Owner Review。
 - [x] 完成 Cloudflare 部署准备文件。
 - [x] 初始化本地 Git 仓库并暂存文件。
-- [ ] 创建 GitHub 仓库并提供 remote URL。
+- [x] 创建 GitHub 仓库并 push 初始 commit：c7a951a。
 - [ ] 到公开发布阶段时确认是否允许提交目录、发帖、外链。
 
 ## 自动流水线
@@ -75,7 +75,7 @@
 
 ## 当前状态
 
-- running：等待 GitHub remote、Cloudflare Pages 项目创建、邮箱路由、Crossref mailto；部署方式已确认为 GitHub 连接 Cloudflare Pages；10 SEO 可继续生产前复核
+- running：等待 Cloudflare Pages 项目创建、邮箱路由、Crossref mailto；部署方式已确认为 GitHub 连接 Cloudflare Pages；10 SEO 可继续生产前复核
 - waiting：launch、review 数据
-- blocked：GitHub remote URL 待提供；Git 作者信息未配置；Cloudflare Pages 尚未创建；`hello@citationformat.site` 邮箱路由待确认；Crossref mailto 待配置；关键词 volume/KD/CPC 未接入付费工具
+- blocked：Cloudflare Pages 尚未创建；`hello@citationformat.site` 邮箱路由待确认；Crossref mailto 待配置；关键词 volume/KD/CPC 未接入付费工具
 - done：00 adapter；01 research-lite；02 PRD；03 pricing；04 compliance；05 copy；06 design-lite；07 frontend-local；08 backend-local

@@ -14,8 +14,8 @@
 | 10 SEO | seo-launch-workflow | READY | 可做本地 SEO 复核；域名未确认导致 canonical/sitemap 仍需上线前修正 |
 | 09 QA | student-site-qa-acceptance | DONE_LOCAL | 本地桌面/移动截图、核心交互、13 路由、robots/sitemap 已验收；结论 CONDITIONAL_GO_LOCAL |
 | Owner Review | owner | DONE | Owner 已确认通过，允许进入部署准备 |
-| Deployment Prep | frontend-site-automation / backend-auto-site-cloudflare-workers | WAITING_GITHUB_REMOTE | 本地 Git 已初始化并暂存；等 Git 作者信息和 GitHub remote URL 后 commit/push |
-| 11 launch | site-ops-growth-launch | WAITING_CLOUDFLARE_SETUP | 等 Cloudflare Pages 项目创建和生产 smoke |
+| Deployment Prep | frontend-site-automation / backend-auto-site-cloudflare-workers | PUSHED_TO_GITHUB | GitHub 已 push：Lydia323-art/citationformat-site，commit c7a951a；等 Cloudflare Pages 连接 |
+| 11 launch | site-ops-growth-launch | WAITING_CLOUDFLARE_SETUP | 等 Cloudflare Pages 项目创建、环境变量、域名绑定和生产 smoke |
 | 14 observability | site-observability-and-launch-verification | WAITING | 等上线 |
 | 12 review | site-data-review-iteration | WAITING | 等数据 |
 
