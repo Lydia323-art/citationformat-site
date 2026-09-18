@@ -15,8 +15,8 @@
 | 09 QA | student-site-qa-acceptance | DONE_LOCAL | 本地桌面/移动截图、核心交互、13 路由、robots/sitemap 已验收；结论 CONDITIONAL_GO_LOCAL |
 | Owner Review | owner | DONE | Owner 已确认通过，允许进入部署准备 |
 | Deployment Prep | frontend-site-automation / backend-auto-site-cloudflare-workers | PAGES_DEPLOYED | Cloudflare Pages 已成功部署，当前可用 pages.dev；最新 commit f28f158 |
-| Custom Domain | cloudflare-pages-github-deploy | CUSTOM_DOMAIN_DNS_PENDING | citationformat.site 进入 Cloudflare DNS 接管流程；等 nameserver 更新、SSL 和正式域名 smoke |
-| 11 launch | site-ops-growth-launch | WAITING_CUSTOM_DOMAIN_SMOKE | 等 citationformat.site 正式域名、生产 smoke、GSC/Bing |
+| Custom Domain | cloudflare-pages-github-deploy | DONE | citationformat.site Active，SSL enabled，正式域名 smoke test 已通过 |
+| 11 launch | site-ops-growth-launch | WAITING_SEARCH_SUBMISSION | 等 Email Routing、GSC/Bing sitemap 提交和上线观测 |
 | 14 observability | site-observability-and-launch-verification | WAITING | 等上线 |
 | 12 review | site-data-review-iteration | WAITING | 等数据 |
 
