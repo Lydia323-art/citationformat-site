@@ -37,7 +37,7 @@ Cloudflare Pages -> Custom domains shows `citationformat.site` as Active with SS
 2. Submit sitemap to Google Search Console.
 3. Submit sitemap to Bing Webmaster Tools.
 4. Run SEO / observability launch verification.
-5. Microsoft Clarity has been added with tracking ID `yk6m615qwt`; wait for the first live data after Cloudflare deploys the GitHub commit.
+5. Microsoft Clarity has been added with tracking ID `yk6m615qwt`; Google Analytics 4 has been created with Measurement ID `G-XZE9JK3WRV`; wait for analytics data after Cloudflare deploys the GitHub commit.
 
 ## Production Smoke Test Checklist
 

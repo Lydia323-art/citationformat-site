@@ -60,6 +60,7 @@
 - [x] Bing Webmaster Tools sitemap 提交成功，发现 13 个 URL。
 - [x] Cloudflare Crawler Hints 已开启。
 - [x] Microsoft Clarity 项目已创建，Tracking ID：yk6m615qwt。
+- [x] Google Analytics 4 数据流已创建，Measurement ID：G-XZE9JK3WRV。
 - [ ] 到公开发布阶段时确认是否允许提交目录、发帖、外链。
 
 ## 自动流水线
@@ -82,7 +83,7 @@
 
 ## 当前状态
 
-- running：等待 Clarity 部署后回传、上线观测；部署方式已确认为 GitHub 连接 Cloudflare Pages
+- running：等待 GA4 部署后回传、上线观测；部署方式已确认为 GitHub 连接 Cloudflare Pages
 - waiting：launch、review 数据
 - blocked：关键词 volume/KD/CPC 未接入付费工具
 - done：00 adapter；01 research-lite；02 PRD；03 pricing；04 compliance；05 copy；06 design-lite；07 frontend-local；08 backend-local

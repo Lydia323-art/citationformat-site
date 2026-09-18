@@ -65,6 +65,13 @@ const notFound = `<!doctype html>
     <title>Page Not Found | Citation Format</title>
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="/styles.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZE9JK3WRV"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag("js", new Date());
+      gtag("config", "G-XZE9JK3WRV");
+    </script>
     <script type="text/javascript">
       (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments);};

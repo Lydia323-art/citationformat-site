@@ -17,10 +17,10 @@
 | Deployment Prep | frontend-site-automation / backend-auto-site-cloudflare-workers | PAGES_DEPLOYED | Cloudflare Pages 已成功部署，当前可用 pages.dev；最新 commit f28f158 |
 | Custom Domain | cloudflare-pages-github-deploy | DONE | citationformat.site Active，SSL enabled，正式域名 smoke test 已通过 |
 | 11 launch | site-ops-growth-launch | WAITING_OBSERVABILITY | 等 Clarity 部署后回传和上线观测 |
-| 14 observability | site-observability-and-launch-verification | WAITING_ANALYTICS | 等 Microsoft Clarity 线上脚本部署并产生首批数据 |
+| 14 observability | site-observability-and-launch-verification | WAITING_GA4 | Clarity 已产生数据；等待 Google Analytics 4 脚本部署并产生首批数据 |
 | 12 review | site-data-review-iteration | WAITING | 等数据 |
 
 ## 状态说明
 
 - `DONE_LITE`：足够推进下游草案，但上线前还需要补证。
-- 当前不阻塞 Cloudflare 设置；生产域名、邮箱路由、GSC/Bing sitemap 与 Crawler Hints 已完成，等待 Clarity 线上脚本部署并产生首批数据。
+- 当前不阻塞 Cloudflare 设置；生产域名、邮箱路由、GSC/Bing sitemap、Crawler Hints 与 Clarity 已完成，等待 GA4 线上脚本部署并产生首批数据。
